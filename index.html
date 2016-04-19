@@ -2,7 +2,7 @@
 <html lang="en-us">
   <head>
     <meta charset="UTF-8">
-    <title>Advanced Monte Carlo Rendering by YuMao1993</title>
+    <title>Advanced Monte Carlo Rendering - Parallel BVH Construction &amp; Bidirectional Path Tracing (BDPT) by Jerrypiglet</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
@@ -11,16 +11,16 @@
   </head>
   <body>
     <section class="page-header">
-      <h1 class="project-name">Advanced Monte Carlo Rendering</h1>
+      <h1 class="project-name">Advanced Monte Carlo Rendering - Parallel BVH Construction &amp; Bidirectional Path Tracing (BDPT)</h1>
       <h2 class="project-tagline">Rui Zhu, Yu Mao</h2>
-      <a href="https://github.com/YuMao1993/cmu-15462-assignment5-YuMao-RuiZhu" class="btn">View on GitHub</a>
-      <a href="https://github.com/YuMao1993/cmu-15462-assignment5-YuMao-RuiZhu/zipball/master" class="btn">Download .zip</a>
-      <a href="https://github.com/YuMao1993/cmu-15462-assignment5-YuMao-RuiZhu/tarball/master" class="btn">Download .tar.gz</a>
+      <a href="https://github.com/Jerrypiglet/cmu-15462-project-YuMao-RuiZhu" class="btn">View on GitHub</a>
+      <a href="https://github.com/Jerrypiglet/cmu-15462-project-YuMao-RuiZhu/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/Jerrypiglet/cmu-15462-project-YuMao-RuiZhu/tarball/master" class="btn">Download .tar.gz</a>
     </section>
 
     <section class="main-content">
       <h1>
-<a id="team-members" class="anchor" href="#team-members" aria-hidden="true"><span class="octicon octicon-link"></span></a>Team Members</h1>
+<a id="team-members" class="anchor" href="#team-members" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Team Members</h1>
 
 <ul>
 <li>Yu Mao, Robotics Institute, School of Computer Science, Carnegie Mellon University (<a href="mailto:ymao1@andrew.cmu.edu">ymao1@andrew.cmu.edu</a>)</li>
@@ -28,7 +28,7 @@
 </ul>
 
 <h1>
-<a id="source-code-click-to-access-the-repository" class="anchor" href="#source-code-click-to-access-the-repository" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="https://github.com/YuMao1993/cmu-15462-assignment5-YuMao-RuiZhu">Source Code (Click to Access the Repository)</a>
+<a id="source-code-click-to-access-the-repository" class="anchor" href="#source-code-click-to-access-the-repository" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a href="https://github.com/Jerrypiglet/cmu-15462-project-YuMao-RuiZhu">Source Code (Click to Access the Repository)</a>
 </h1>
 
 <p>Also submitted to the afs cloud at </p>
@@ -38,7 +38,7 @@
 </blockquote>
 
 <h2>
-<a id="how-to-test-the-code" class="anchor" href="#how-to-test-the-code" aria-hidden="true"><span class="octicon octicon-link"></span></a>How to test the code</h2>
+<a id="how-to-test-the-code" class="anchor" href="#how-to-test-the-code" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How to test the code</h2>
 
 <p><strong>Warning</strong>: Before compiling the program, make sure you have:</p>
 
@@ -66,14 +66,14 @@
 <p>Again notice that only <strong>AreaLight</strong> models (the Cornell Box series) are supported in our little BDPT demo version.</p>
 
 <h1>
-<a id="final-report-in-pdf-15-pages-click-me-to-view" class="anchor" href="#final-report-in-pdf-15-pages-click-me-to-view" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="https://github.com/YuMao1993/cmu-15462-assignment5-YuMao-RuiZhu/blob/master/15662_Project_Report.pdf">Final Report (in .pdf; 15+ pages; Click me to view)</a>
+<a id="final-report-in-pdf-15-pages-click-me-to-view" class="anchor" href="#final-report-in-pdf-15-pages-click-me-to-view" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a href="https://github.com/Jerrypiglet/cmu-15462-project-YuMao-RuiZhu/blob/master/15662_Project_Report.pdf">Final Report (in .pdf; 15+ pages; Click me to view)</a>
 </h1>
 
 <h1>
-<a id="a-brief-overview-of-the-project" class="anchor" href="#a-brief-overview-of-the-project" aria-hidden="true"><span class="octicon octicon-link"></span></a>A Brief Overview of the Project</h1>
+<a id="a-brief-overview-of-the-project" class="anchor" href="#a-brief-overview-of-the-project" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>A Brief Overview of the Project</h1>
 
 <h2>
-<a id="what-did-we-do" class="anchor" href="#what-did-we-do" aria-hidden="true"><span class="octicon octicon-link"></span></a>What did we do</h2>
+<a id="what-did-we-do" class="anchor" href="#what-did-we-do" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>What did we do</h2>
 
 <p>We complemented two tasks according to the proposal:</p>
 
@@ -84,10 +84,10 @@
 </ol>
 
 <h2>
-<a id="overview-of-the-project" class="anchor" href="#overview-of-the-project" aria-hidden="true"><span class="octicon octicon-link"></span></a>Overview of the project</h2>
+<a id="overview-of-the-project" class="anchor" href="#overview-of-the-project" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Overview of the project</h2>
 
 <h3>
-<a id="task-1-parallel-bvh-construction-with-cuda-acceleration" class="anchor" href="#task-1-parallel-bvh-construction-with-cuda-acceleration" aria-hidden="true"><span class="octicon octicon-link"></span></a>Task 1: Parallel BVH Construction with CUDA Acceleration</h3>
+<a id="task-1-parallel-bvh-construction-with-cuda-acceleration" class="anchor" href="#task-1-parallel-bvh-construction-with-cuda-acceleration" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Task 1: Parallel BVH Construction with CUDA Acceleration</h3>
 
 <p>For the first task, we first implemented the Morton code based method which only runs on CPU. Then we implemented the parallel binary radix tree(BRT) construction algorithm as proposed in <a href="http://dl.acm.org/citation.cfm?id=2383801"><em>Karras, Tero. "Maximizing parallelism in the construction of BVHs, octrees, and k-d trees."</em></a> for general BRT construction. Thirdly, we implemented the parallel algorithm for BVH construction based on BRT construction algorithm, which augments it by adding a bottom-up parallel bounding box construction phase. We also compared the efficiency of different approaches.</p>
 
@@ -104,7 +104,7 @@
 <p><img src="http://7u2p2j.com1.z0.glb.clouddn.com/CUDAres2.png" alt=""></p>
 
 <h3>
-<a id="task-2-bidirectional-path-tracing" class="anchor" href="#task-2-bidirectional-path-tracing" aria-hidden="true"><span class="octicon octicon-link"></span></a>Task 2: Bidirectional Path Tracing</h3>
+<a id="task-2-bidirectional-path-tracing" class="anchor" href="#task-2-bidirectional-path-tracing" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Task 2: Bidirectional Path Tracing</h3>
 
 <p>For the second one, we modified the renderer used in Homework 3, which uses traditional path tracing, to one which uses Bidirectional Path Tracing (BDPT). The new renderer is able to render scenes with AreaLight using BDPT with better illumination and variation in shadowed areas. We compared the efficiency of there two methods, as well as the ``photorealisticity" of the rendered images under these two methods. Our BDPT gives better illumination in the soft shaded area, and less variance in the caustic focused light under a glass sphere.</p>
 
@@ -117,12 +117,12 @@
 <p><a href="https://youtu.be/gRIJggimCf4"><img src="http://7u2p2j.com1.z0.glb.clouddn.com/youtubeBDPT.jpg" alt="Everything Is AWESOME"></a></p>
 
 <h1>
-<a id="initial-project-proposal-changed-during-implementation" class="anchor" href="#initial-project-proposal-changed-during-implementation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Initial Project Proposal [Changed during implementation]</h1>
+<a id="initial-project-proposal-changed-during-implementation" class="anchor" href="#initial-project-proposal-changed-during-implementation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Initial Project Proposal [Changed during implementation]</h1>
 
 <p>For the last assignment, we are going to choose option F: <strong>Advanced Monte Carlo Rendering</strong>. We will implement sub-options <strong>1 to 4</strong>.</p>
 
 <h2>
-<a id="task-1-improve-performance-of-bvh-construction" class="anchor" href="#task-1-improve-performance-of-bvh-construction" aria-hidden="true"><span class="octicon octicon-link"></span></a>Task 1: Improve performance of BVH construction</h2>
+<a id="task-1-improve-performance-of-bvh-construction" class="anchor" href="#task-1-improve-performance-of-bvh-construction" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Task 1: Improve performance of BVH construction</h2>
 
 <p>We would improve the BVH construction process by refering to 
 <a href="https://research.nvidia.com/publication/fast-parallel-construction-high-quality-bounding-volume-hierarchies"><em>Fast Parallel Construction of High-Quality Bounding Volume Hierarchies</em></a>. We would implement the method in the previous system for assignment 3.</p>
@@ -130,7 +130,7 @@
 <p>We would conduct evaluation on the system to compare the efficiency before and after the improvement.</p>
 
 <h2>
-<a id="task-2-improve-performance-of-ray-tracing" class="anchor" href="#task-2-improve-performance-of-ray-tracing" aria-hidden="true"><span class="octicon octicon-link"></span></a>Task 2: Improve performance of ray tracing</h2>
+<a id="task-2-improve-performance-of-ray-tracing" class="anchor" href="#task-2-improve-performance-of-ray-tracing" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Task 2: Improve performance of ray tracing</h2>
 
 <p>We would refer to <a href="http://graphics.stanford.edu/%7Eboulos/papers/togbvh.pdf">Ray Tracing Deformable Scenes using
 Dynamic Bounding Volume Hierarchies</a> and implement the fast packet-based ray tracing using. </p>
@@ -138,7 +138,7 @@ Dynamic Bounding Volume Hierarchies</a> and implement the fast packet-based ray 
 <p>We would conduct evaluation on the system to compare the efficiency before and after the improvement.</p>
 
 <h2>
-<a id="task-3-implement-an-advanced-global-sampling-algorithm" class="anchor" href="#task-3-implement-an-advanced-global-sampling-algorithm" aria-hidden="true"><span class="octicon octicon-link"></span></a>Task 3: Implement an advanced global sampling algorithm.</h2>
+<a id="task-3-implement-an-advanced-global-sampling-algorithm" class="anchor" href="#task-3-implement-an-advanced-global-sampling-algorithm" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Task 3: Implement an advanced global sampling algorithm.</h2>
 
 <p>We would like to implement <strong>bidirectional path tracing</strong> to help find the best paths and reduce the cost. Maybe We will consider using parallel computing skills to further improve the efficiency.</p>
 
@@ -147,12 +147,12 @@ Dynamic Bounding Volume Hierarchies</a> and implement the fast packet-based ray 
 <p>We may refer to the <em>PBRT</em> book for details about the algorithm.</p>
 
 <h2>
-<a id="task-4-improved-sampling-patterns" class="anchor" href="#task-4-improved-sampling-patterns" aria-hidden="true"><span class="octicon octicon-link"></span></a>Task 4: Improved sampling patterns.</h2>
+<a id="task-4-improved-sampling-patterns" class="anchor" href="#task-4-improved-sampling-patterns" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Task 4: Improved sampling patterns.</h2>
 
 <p>We would use <strong>blue noise</strong> (maybe <strong>adaptive blue noise</strong>) and <strong>stratified sampling</strong> to improve the sampling pattern. We will compare the estimated variance of the estimator and the time consumption.</p>
 
       <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/YuMao1993/cmu-15462-assignment5-YuMao-RuiZhu">Advanced Monte Carlo Rendering</a> is maintained by <a href="https://github.com/YuMao1993">YuMao1993</a>.</span>
+        <span class="site-footer-owner"><a href="https://github.com/Jerrypiglet/cmu-15462-project-YuMao-RuiZhu">Advanced Monte Carlo Rendering - Parallel BVH Construction &amp; Bidirectional Path Tracing (BDPT)</a> is maintained by <a href="https://github.com/Jerrypiglet">Jerrypiglet</a>.</span>
 
         <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
       </footer>
